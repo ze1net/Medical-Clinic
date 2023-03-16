@@ -1,7 +1,7 @@
-from django.urls import path
-
 from rest_framework import routers
-from .views import *
+
+# blog app called viewsets are
+from .viewsets import BlogViewSet, BlogCategoryViewSet, BlogCommentViewSet, BlogTagViewSet
 
 router = routers.SimpleRouter()
 router.register('blog', BlogViewSet, basename='blog')
